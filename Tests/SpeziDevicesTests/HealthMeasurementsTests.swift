@@ -17,7 +17,7 @@ import Testing
 
 @MainActor
 @Suite
-final class HealthMeasurementsTests {
+struct HealthMeasurementsTests {
     @Test
     func receivingWeightMeasurements() async throws {
         let device = MockDevice.createMockDevice(state: .connecting, weightMeasurement: .mock(additionalInfo: .init(bmi: 230, height: 1790)))
